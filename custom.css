@@ -1,15 +1,67 @@
-.home-title {
-    height: 200px;
-    display: flex;
-    justify-content: center;   /* centers horizontally */
-    align-items: center;       /* centers vertically */
-    text-align: center;
-  }
-  
   body {
     background: linear-gradient(135deg, #a89ffa, #a8e1fc);
     color: #1a1a1a;
   }
+
+.home-title {
+  height: 200px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 60px; /* PADDING IS WHAT SHIFTS IT BY ADDING SPACE AROUND */
+}
+
+.home-description{
+  height: 0px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 60px;
+  }
+
+  .image-container {
+    padding: 20px;
+  }
+  
+  .image-img {
+    width: 250px; /* this adjusts the size of the image */
+    height: auto;
+    align-items: center;
+    border-radius: 12px;
+    opacity: 0.9;
+    filter: grayscale(100%);
+  }  
+  
+ /* .projects-button{
+    height: 50px;
+    width: 170px;
+    background-color: #4c2fce;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }*/
+
+  .projects-button:hover{
+    background-color: #7b74db;
+  }
+
+  /*TYPEWRITER EFFECT*/
+  #typewriter {
+    color: #d63384; /* pinkish highlight */
+    font-weight: bold;
+    border-right: 2px solid black;
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% { border-color: rgb(48, 108, 217); }
+    50% { border-color: transparent; }
+    100% { border-color: rgb(48, 108, 217); }
+  }  
 
   /* DARK MODE STUFF */
   body.dark-mode {
@@ -30,5 +82,7 @@
   #darkModeToggle:hover {
     background-color: #495057; /* slightly lighter on hover */
   }
-  
+  /* */
+
+
   
