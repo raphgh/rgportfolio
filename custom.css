@@ -3,6 +3,11 @@
     color: #1a1a1a;
   }
 
+/* BOLT CURSOR */
+  body {
+    cursor: url('images/lightning-bolt-outline.png'), auto;
+  }  
+
 .home-title {
   height: 200px;
   display: flex;
@@ -31,6 +36,16 @@
     opacity: 0.9;
     filter: grayscale(100%);
   }  
+
+  .about-me-text{
+    height: 0px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-right: 60px;
+    font-family: Menlo, Consolas, 'Courier New', monospace;
+ }
   
  /* .projects-button{
     height: 50px;
@@ -80,7 +95,7 @@
   }
     
   #darkModeToggle:hover {
-    background-color: #495057; /* slightly lighter on hover */
+    background-color: #cd3798; /* slightly lighter on hover */
   }
   /* */
 
