@@ -8,44 +8,142 @@
     cursor: url('images/lightning-bolt-outline.png'), auto;
   }  
 
-.home-title {
-  height: 200px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-left: 60px; /* PADDING IS WHAT SHIFTS IT BY ADDING SPACE AROUND */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+.navbar-title{
+  padding-left: 20px;
 }
 
-.home-description{
-  height: 0px;
+/* Hover effect 
+nav a:hover {
+  color: #ff66b2; /* light pink for hover
+}
+
+/* Active page link 
+nav a.active {
+  color: #ff4da6; /* stronger pink for active page 
+  font-weight: 700;
+  border-bottom: 2px solid #ff4da6; /* optional underline effect 
+}
+*/
+
+.home-title {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 60px;
+  padding-top: 90px;
+  padding-left: 90px; /* PADDING IS WHAT SHIFTS IT BY ADDING SPACE AROUND */
+}
+
+.home-description{ /* the 'im a passionate ....' */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 90px;
   }
 
-  .image-container {
+.home-scroll{ 
+  padding-top: 30px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 90px;
+  color: #3e3d3d;
+  }  
+
+.ui-ux-item { /* MENU ITEM */
+  background: #cd3798;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+  
+ /* .image-container {
     padding: 20px;
   }
   
   .image-img {
-    width: 250px; /* this adjusts the size of the image */
+    width: 250px; /* this adjusts the size of the image 
     height: auto;
     align-items: center;
     border-radius: 12px;
     opacity: 0.9;
     filter: grayscale(100%);
-  }  
+  }  */
 
-  .about-me-text{
-    height: 0px;
+ /* .vinyl-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .vinyl {
+    width: 200px; /* adjust size 
+    height: 200px;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+    */
+
+  .home-design-projects{
+    padding-top: 525px;
     justify-content: left;
     align-items: center;
-    padding-left: 60px;
-    padding-top: 50px;
-    padding-right: 60px;
-    font-family: Menlo, Consolas, 'Courier New', monospace;
+    padding-left: 90px;
+  }
+
+  .home-projects{
+    padding-top: 200px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 90px;
+  }    
+  
+  .home-contact{
+    padding-top: 200px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 90px;
+    padding-bottom: 200px;
+  }
+  
+/* --------------- ABOUT ME ------------- */
+.about-me-item{ /* the links that lead to diff sections on the page */
+    color: white;
+    padding-left: 0px;
+    font-weight: bold;
  }
+
+.about-me-text{
+  height: 0px;
+  justify-content: left;
+  align-items: center;
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-right: 60px;
+  font-family: Menlo, Consolas, 'Courier New', monospace;
+}
+
+.how-i-work{
+  background: #f0f0ff; /* light bluish vibe */
+  padding: 40px;
+  width: 100%;
+}
+
+.my-education{
+  padding: 40px;
+  width: 100%;
+}
   
  /* .projects-button{
     height: 50px;
@@ -63,7 +161,53 @@
     background-color: #7b74db;
   }
 
-  /*TYPEWRITER EFFECT*/
+  /* -------------- UI UX --------------- */
+  .back-button{
+    background: #cd3798;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+  .home-projects-container{
+  }
+
+  .home-projects-design{
+    display: flex;
+    flex-direction: column;        /* stack the text */
+    justify-content: center;       /* center vertically */
+    align-items: center;           /* center horizontally */
+    text-align: center;
+    color: #1a1a1a;
+  }
+
+  /* -------------- PROJECTS -------------- */
+  .coming-soon {
+    display: flex;
+    flex-direction: column;        /* stack the text */
+    justify-content: center;       /* center vertically */
+    align-items: center;           /* center horizontally */
+    height: 90vh;                 /* full height of the viewport */
+    text-align: center;
+    padding: 4rem 1rem;
+    color: #1a1a1a;
+    }
+  
+  .coming-desc {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #444;
+  }
+  
+  .coming-tag {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #eb396e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }  
+
+  /* ----------- TYPEWRITER EFFECT --------- */
   #typewriter {
     color: #d63384; /* pinkish highlight */
     font-weight: bold;
@@ -78,7 +222,7 @@
     100% { border-color: rgb(48, 108, 217); }
   }  
 
-  /* DARK MODE STUFF */
+  /* ------------ DARK MODE STUFF ----------- */
   body.dark-mode {
     background: linear-gradient(135deg, #511c5c, #4c2fce); /* dark gradient */
     color: #f5f5f5;
@@ -86,17 +230,21 @@
 
   .navbar.dark-mode,
   .navbar.dark-mode .nav-link,
-  .navbar.dark-mode .navbar-brand {
+  .navbar.dark-mode .navbar-brand{
     color: #e0e0e0 !important;
   }
-  
-  .dark-mode .nav-link {
-    color: #e0e0e0 !important;
-  }
-    
+      
   #darkModeToggle:hover {
-    background-color: #cd3798; /* slightly lighter on hover */
+    background-color: #df77ba; /* slightly lighter on hover */
+  }  
+  
+  /* for the projects */
+  body.dark-mode .coming-soon, 
+  body.dark-mode .coming-desc,
+  body.dark-mode .home-scroll{
+    color: #e0e0e0;
   }
+
   /* */
 
 
