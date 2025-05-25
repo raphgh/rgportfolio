@@ -112,18 +112,47 @@ nav a.active {
     text-align: center;
     padding-bottom: 200px;
   }
+
+  .contact-me-button{
+    text-decoration: none;
+    height: 80px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #ce2f84;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 6px 4px rgba(208, 94, 162, 0.7);
+  }
+
+  .contact-me-button:hover{
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px;
+    background-color: #511c5c;
+    color: white;
+    text-decoration: none;  
+  } 
   
 /* --------------- ABOUT ME ------------- */
 .about-me-item{ /* the links that lead to diff sections on the page */
-    color: rgb(0, 0, 0);
-    padding-left: 0px;
-    font-weight: bold;
+  display: inline-block;
+  background-color: #eb396e1a;
+  color: #eb396e;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  margin-right: 0.4rem;
  }
 
 .about-me-text{
   height: 0px;
   justify-content: left;
   align-items: center;
+  line-height: 1.6;
   padding-left: 60px;
   padding-top: 50px;
   padding-right: 60px;
@@ -131,15 +160,17 @@ nav a.active {
 }
 
 .about-me-image{
-  width: 330px;
-  height: 350px;
-  border-radius: 40px; /* 180 px for circle */
-  margin-top: 7rem; /* adjust this value */
+  width: 250px;
+  height: 280px;
+  border-radius: 20px; /* 180 px for circle */
+  margin-top: 10rem; /* adjust this value */
+  border-width: 5px;
+  border-color: #ffffff;
 }
 /* i want to add a circular image with a vinyl outline and when i click on it it spins and plays a sound */
 
 .how-i-work{
-  padding-top: 190px;
+  padding-top: 170px;
   width: 100%;
   padding-left: 0px;
   padding-bottom: 50px;
@@ -177,17 +208,17 @@ nav a.active {
     display: inline-block;
     background-color: #eb396e1a;
     color: #eb396e;
-    font-size: 1rem;              /* Increased from 0.85rem */
+    font-size: 1rem;              
     font-weight: 800;
-    padding: 0.45rem 0.8rem;      /* Slightly more padding */
-    margin: 0 0.3rem;             /* More spacing between them */
+    padding: 0.45rem 0.8rem;      
+    margin: 0 0.3rem;             
     border-radius: 999px;
     transition: 0.2s ease;
   }
 
   /* -------------- UI UX --------------- */
   .back-button{
-    background: #cd3798;
+    background: #353333;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
