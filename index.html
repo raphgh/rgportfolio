@@ -13,26 +13,26 @@
             <!-- Dark Mode Toggle Button -->
             <button class="btn" id="darkModeToggle">🌙</button>
 
-            <a class="navbar-brand" href="index.html">Raphaelle's Portfolio</a>
+            <a class="navbar-brand" href="index.html">raphaelle's portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link current-item" href="index.html">home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About me</a>
+                        <a class="nav-link" href="about.html">about me</a>
                     </li>
                     <li class="ui-ux-item">
-                        <a class="nav-link" href="design.html">UX/UI Work</a>
+                        <a class="nav-link" href="design.html">design</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</Code></a>
+                        <a class="nav-link" href="projects.html">development</Code></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact me</a>
+                        <a class="nav-link" href="contact.html">contact me</a>
                     </li>
                 </ul>
             </div>
@@ -49,6 +49,9 @@
     <div class="home-description">
         <h1>i'm a passionate <span id="typewriter"></span></h1>
     </div>
+    <div class="home-subtitle">
+        <p>📍 based in ottawa, ontario.</p>
+    </div>
     <!--<div class="image-container my-4">
         <img src="images/portfolio.jpg" alt="Sketch of Raphaëlle" class="image-img">
     </div>-->
@@ -62,18 +65,19 @@
     <section class="home-design-projects" id="homedesignprojects">
         <h1>my ux/ui-focused projects</h1>
         <p class="home-projects-desc">a collection of my designing skills.</p>
+
         <div class="home-projects-container">
             <div class="home-projects-item">
-                <a href="project1.html"><img src="images/project1.png" alt="project 1"></a>
+                <a href="project1.html"><img src="images/bakingwebsite.png" alt="project 1"></a>
             </div>
             <div class="home-projects-item">
-                <a href="project2.html"><img src="images/project2.png" alt="project 2"></a>
+                <a href="project2.html"><img src="images/colorgame.png" alt="project 2"></a>
             </div>
             <div class="home-projects-item">
-                <a href="project3.html"><img src="images/project3.png" alt="project 3"></a>
+                <a href="project3.html"><img src="images/ecommercefashion.jpg" alt="project 3"></a>
             </div>
             <div class="home-projects-item">
-                <a href="project4.html"><img src="images/project4.png" alt="project 4"></a>
+                <a href="project4.html"><img src="images/sportsstats.png" alt="project 4"></a>
             </div>
         </div>
     </section>
@@ -83,19 +87,19 @@
       <p class="home-projects-desc">now for my coding skills!</p>
       <div class="home-projects-container">
           <div class="home-projects-item">
-              <a href="project1.html"><img src="images/project1.png" alt="project"></a>
+              <a href="project1.html"><img src="" alt="project"></a>
           </div>
           <div class="home-projects-item">
-              <a href="project2.html"><img src="images/project2.png" alt="project"></a>
+              <a href="project2.html"><img src="" alt="project"></a>
           </div>
           <div class="home-projects-item">
-              <a href="project3.html"><img src="images/project3.png" alt="project"></a>
+              <a href="project3.html"><img src="" alt="project"></a>
           </div>
           <div class="home-projects-item">
-              <a href="project4.html"><img src="images/project4.png" alt="project"></a>
+              <a href="project4.html"><img src="" alt="project"></a>
           </div>
       </div>
-  </section>
+    </section>
 
     <section class="home-contact">
         <h1>let's connect!</h1>
@@ -139,7 +143,7 @@
       
       <!-- TYPEWRITER JS -->
       <script>
-        const words = ["software engineer.", "designer.", "musician.", "team player.", "creator.", "entrepreneur."];
+        const words = ["software engineer", "designer", "musician", "team player", "creator", "entrepreneur"];
         let i = 0;
         let j = 0;
         let currentWord = "";

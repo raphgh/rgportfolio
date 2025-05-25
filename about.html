@@ -13,78 +13,93 @@
             <!-- Dark Mode Toggle Button -->
             <button class="btn" id="darkModeToggle">🌙</button>
 
-            <a class="navbar-brand" href="index.html">Raphaelle's Portfolio</a>
+            <a class="navbar-brand" href="index.html">raphaelle's portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About me</a>
+                        <a class="nav-link current-item" href="about.html">about me</a>
                     </li>
                     <li class="ui-ux-item">
-                        <a class="nav-link" href="design.html">UX/UI Work</a>
+                        <a class="nav-link" href="design.html">design</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</Code></a>
+                        <a class="nav-link" href="projects.html">development</Code></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact me</a>
+                        <a class="nav-link" href="contact.html">contact me</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div class="container mt-5">
+        <div class="row align-items-start">
+          
+          <!-- Text Column -->
+          <div class="col-md-9 about-me-text">
 
-    <div>
-    <div class="about-me-text">
-        <h5><strong>more about me!</h5></strong>
-        <p> coder.  creative.  always building.</p>
-        <br>
-        <!--<ul class="about-me-item">
-            <a class="nav-link" href="">education</a>
-        </ul>-->
-        <ul class="about-me-item">
-            <p>🧠 <a class="link" href="#about me">about me</a>
-            🎸 <a class="link" href="#work">how i work</a>
-            ☕️ <a class="link" href="#education">education</a></p>
-        </ul>
-        <p>i'm currently a <strong>second-year software engineering student</strong> at uOttawa.</p>
-        <p>i'm a <strong>creative</strong> person at heart and love working at the intersection of technology and entrepreneurship. </p> 
-        <br>
+            <ul class="about-me-item">
+              <p>
+                🧠 <a class="link" href="#about me">about me</a>
+                🎸 <a class="link" href="#work">how i work</a>
+                ☕️ <a class="link" href="#education">education</a>
+              </p>
+            </ul>
 
-        <p>so far, i've worked with <strong>full-stack</strong> projects, to <strong>UX/UI</strong>, to website and app development.</p>
-        <br>
-        <p>i'm a motivated learner, passionate about impactful work.</p>
-        <!--<p>(... and am currently looking for internships and co-op opportunities in software development.)</p>-->
-        <br>
-        <p>i also strongly enjoy music and performing, running, and often enjoy photography and videography. 🎶</p>
-        <p>feel free to check out my past projects and work experience for more details on what i've worked on!</p>
-        <br>
-        <p>thanks for visiting my portfolio!</p>
-        <br>
-        <br>
-        <br>
+            <h5><strong>more about me!</strong></h5>
+            <!--<p>coder. creative. always building.</p>-->
+            <p>i'm currently a <strong>second-year software engineering student</strong> at uOttawa.</p>
+            <p>i'm a <strong>creative</strong> person at heart and love working at the intersection of technology and entrepreneurship.</p> 
+            <br>
+            <p>so far, i've worked with <strong>full-stack</strong> projects, to <strong>UX/UI</strong>, to website and app development.</p>
+            <p>i'm a motivated learner, passionate about impactful work.</p>
+            <br>
+            <p>along with that, i strongly enjoy music and performing, running, and often enjoy photography and videography. 🎶</p>
+            <p>feel free to check out my past projects and work experience for more details on what i've worked on!</p>
+            <br>
+            <p>thanks for visiting my portfolio!</p>
+            <br>
+            <br>
 
-        <div class="how-i-work" id="work">
-            <h2>how i work</h2>
-            <p>some text here...</p>
+            <!-- How I Work -->
+            <div id="work" class="how-i-work">
+              <h2>how i work?</h2>
+              <br>
+              <span class="keyword">detail-oriented</span> <span class="keyword">ambitious</span> <span class="keyword">adaptable</span> <span class="keyword">collaborative</span> <span class="keyword">driven</span>
+              <br>
+              <br>
+              <p>
+                i always show up curious and prepared! i like bringing energy and clarity to the table.
+               </p>
+               <p>
+                i love working with ambitious people who push the vision further; i ask questions, give honest feedback, and listen closely.
+               </p>
+                <p>
+                when collaborating, i’m hands-on and intentional. i care about the details but never lose sight of the bigger picture.
+                </p>
+                <p>
+                i negotiate design decisions with both logic and empathy—making sure it works for the user and the team.
+                </p>
+                <p>
+                i help move the work forward by staying adaptable, keeping things organized, and not being afraid to iterate fast.
+                </p>
+              <br>
+            </div>
+
         </div>
-        
-        <div class="my-education" id="education">
-            <h2>my Education</h2>
-            <p>some text here...</p>
-            <p> uottawa </p>
-            <p> software '27 etc </p>
-        </div>
+      
+          <!-- Image Column -->
+          <div class="col-md-3 text-center">
+            <img src="images/about-me-image.png" class="img-fluid about-me-image" alt="About Me">
+          </div>
 
-    </div>
-      
-      
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -99,7 +114,7 @@
       
           // change icon
           if (toggleBtn.innerText === '🌙') {
-            toggleBtn.innerText = '☀️';
+            toggleBtn.innerText = '💡';
           } else {
             toggleBtn.innerText = '🌙';
           }

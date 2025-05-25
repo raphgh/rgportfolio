@@ -1,6 +1,6 @@
   body {
     background: linear-gradient(135deg, #a89ffa, #a8e1fc);
-    color: #1a1a1a;
+    color: #000000;
   }
 
 /* BOLT CURSOR */
@@ -16,6 +16,13 @@
   padding-left: 20px;
 }
 
+.current-item { /* current menu item */
+  background: #cd3798;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 /* Hover effect 
 nav a:hover {
   color: #ff66b2; /* light pink for hover
@@ -29,6 +36,7 @@ nav a.active {
 }
 */
 
+/* --------------- HOME PAGE ------------- */
 .home-title {
   display: flex;
   justify-content: left;
@@ -44,82 +52,70 @@ nav a.active {
   padding-left: 90px;
   }
 
+.home-subtitle{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 90px;
+  padding-top: 10px;
+}
+
 .home-scroll{ 
   padding-top: 30px;
   display: flex;
   justify-content: left;
   align-items: center;
   padding-left: 90px;
-  color: #3e3d3d;
+  color: #353333;
   }  
 
-.ui-ux-item { /* MENU ITEM */
-  background: #cd3798;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-  
- /* .image-container {
-    padding: 20px;
-  }
-  
-  .image-img {
-    width: 250px; /* this adjusts the size of the image 
-    height: auto;
-    align-items: center;
-    border-radius: 12px;
-    opacity: 0.9;
-    filter: grayscale(100%);
-  }  */
-
- /* .vinyl-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  .vinyl {
-    width: 200px; /* adjust size 
-    height: 200px;
-  }
-  
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-    */
-
   .home-design-projects{
-    padding-top: 525px;
-    justify-content: left;
-    align-items: center;
-    padding-left: 90px;
+    padding-top: 500px;
+    text-align: center;
+    }
+
+  .home-projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 2rem; /* space between items */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
   }
 
+  .home-projects-item img{
+    width: 520px;
+    height: 300px;
+    display: block;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4c2fce;
+    box-shadow: -5px 10px 5px rgba(208, 94, 162, 0.7);  
+  }
+
+  /* push-down effect */
+  .home-projects-item img:hover{
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px;  
+  } 
+
+  /* other proejcts section in home page */
   .home-projects{
-    padding-top: 200px;
-    justify-content: left;
-    align-items: center;
-    padding-left: 90px;
+    padding-top: 300px;
+    text-align: center;
   }    
   
+  /* contact section in home page */
   .home-contact{
-    padding-top: 200px;
-    justify-content: left;
-    align-items: center;
-    padding-left: 90px;
+    padding-top: 300px;
+    text-align: center;
     padding-bottom: 200px;
   }
   
 /* --------------- ABOUT ME ------------- */
 .about-me-item{ /* the links that lead to diff sections on the page */
-    color: white;
+    color: rgb(0, 0, 0);
     padding-left: 0px;
     font-weight: bold;
  }
@@ -134,17 +130,33 @@ nav a.active {
   font-family: Menlo, Consolas, 'Courier New', monospace;
 }
 
+.about-me-image{
+  width: 330px;
+  height: 350px;
+  border-radius: 40px; /* 180 px for circle */
+  margin-top: 7rem; /* adjust this value */
+}
+/* i want to add a circular image with a vinyl outline and when i click on it it spins and plays a sound */
+
 .how-i-work{
-  background: #f0f0ff; /* light bluish vibe */
-  padding: 40px;
+  padding-top: 190px;
   width: 100%;
+  padding-left: 0px;
+  padding-bottom: 50px;
 }
 
 .my-education{
-  padding: 40px;
+  padding-top: 30px;
   width: 100%;
+  padding-left: 0px;
+  padding-bottom: 50px;
 }
-  
+
+.about-me-image:hover{
+  transform: rotate(360deg);
+  transition: transform s ease-in-out;
+}
+
  /* .projects-button{
     height: 50px;
     width: 170px;
@@ -155,10 +167,22 @@ nav a.active {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }*/
+  }
 
   .projects-button:hover{
     background-color: #7b74db;
+  }*/
+
+  .keyword {
+    display: inline-block;
+    background-color: #eb396e1a;
+    color: #eb396e;
+    font-size: 1rem;              /* Increased from 0.85rem */
+    font-weight: 800;
+    padding: 0.45rem 0.8rem;      /* Slightly more padding */
+    margin: 0 0.3rem;             /* More spacing between them */
+    border-radius: 999px;
+    transition: 0.2s ease;
   }
 
   /* -------------- UI UX --------------- */
@@ -187,16 +211,16 @@ nav a.active {
     flex-direction: column;        /* stack the text */
     justify-content: center;       /* center vertically */
     align-items: center;           /* center horizontally */
-    height: 90vh;                 /* full height of the viewport */
+    height: 90vh;                  /* full height of the viewport */
     text-align: center;
     padding: 4rem 1rem;
-    color: #1a1a1a;
+    color: #000000;
     }
   
   .coming-desc {
     font-size: 1.2rem;
     margin-top: 1rem;
-    color: #444;
+    color: #353333;
   }
   
   .coming-tag {
@@ -222,16 +246,16 @@ nav a.active {
     100% { border-color: rgb(48, 108, 217); }
   }  
 
-  /* ------------ DARK MODE STUFF ----------- */
+  /* ------------ LIGHT/DARK MODE STUFF ----------- */
   body.dark-mode {
-    background: linear-gradient(135deg, #511c5c, #4c2fce); /* dark gradient */
-    color: #f5f5f5;
+    background: linear-gradient(135deg, #511c5c, #4c2fce); /* LIGHT MODE gradient */
+    color: #ffffff;
   }  
 
   .navbar.dark-mode,
   .navbar.dark-mode .nav-link,
   .navbar.dark-mode .navbar-brand{
-    color: #e0e0e0 !important;
+    color: #ffffff !important;
   }
       
   #darkModeToggle:hover {
@@ -242,7 +266,7 @@ nav a.active {
   body.dark-mode .coming-soon, 
   body.dark-mode .coming-desc,
   body.dark-mode .home-scroll{
-    color: #e0e0e0;
+    color: #ffffff;
   }
 
   /* */
