@@ -139,13 +139,13 @@ nav a.active {
 /* --------------- ABOUT ME ------------- */
 .about-me-item{ /* the links that lead to diff sections on the page */
   display: inline-block;
-  background-color: #eb396e1a;
   color: #eb396e;
   font-size: 1rem;
   font-weight: 700;
   padding: 0.4rem 0.8rem;
   border-radius: 999px;
   margin-right: 0.4rem;
+  text-decoration: none;
  }
 
 .about-me-text{
@@ -162,12 +162,17 @@ nav a.active {
 .about-me-image{
   width: 250px;
   height: 280px;
-  border-radius: 20px; /* 180 px for circle */
   margin-top: 10rem; /* adjust this value */
-  border-width: 5px;
-  border-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: -5px 10px 5px rgba(208, 94, 162, 0.7);  
 }
 /* i want to add a circular image with a vinyl outline and when i click on it it spins and plays a sound */
+
+a:hover .about-me-image{
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px;
+  opacity: 0.8;
+}
 
 .how-i-work{
   padding-top: 170px;
