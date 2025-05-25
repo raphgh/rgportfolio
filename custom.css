@@ -160,9 +160,9 @@ nav a.active {
 }
 
 .about-me-image{
-  width: 250px;
-  height: 280px;
-  margin-top: 10rem; /* adjust this value */
+  width: 330px;
+  height: 380px;
+  margin-top: 8rem; /* adjust this value */
   border-radius: 20px;
   box-shadow: -5px 10px 5px rgba(208, 94, 162, 0.7);  
 }
@@ -177,8 +177,15 @@ a:hover .about-me-image{
 .how-i-work{
   padding-top: 170px;
   width: 100%;
-  padding-left: 0px;
+  padding-left: 40px;
   padding-bottom: 50px;
+}
+
+.how-i-work-text{
+  line-height: 2;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-right: 60px;
 }
 
 .my-education{
