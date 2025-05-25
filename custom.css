@@ -133,7 +133,7 @@ nav a.active {
     box-shadow: 0px 0px 0px;
     background-color: #511c5c;
     color: white;
-    text-decoration: none;  
+    text-decoration: none; 
   } 
   
 /* --------------- ABOUT ME ------------- */
@@ -175,7 +175,7 @@ a:hover .about-me-image{
 }
 
 .how-i-work{
-  padding-top: 170px;
+  padding-top: 150px;
   width: 100%;
   padding-left: 40px;
   padding-bottom: 50px;
@@ -193,11 +193,6 @@ a:hover .about-me-image{
   width: 100%;
   padding-left: 0px;
   padding-bottom: 50px;
-}
-
-.about-me-image:hover{
-  transform: rotate(360deg);
-  transition: transform s ease-in-out;
 }
 
  /* .projects-button{
