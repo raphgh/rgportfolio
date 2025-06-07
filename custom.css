@@ -277,6 +277,16 @@ a:hover .about-me-image{
     letter-spacing: 1px;
   }  
 
+  .lumiere-item{
+    width: 520px;
+    height: 300px;
+    display: block;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4c2fce;
+  }
+
   /* ----------- TYPEWRITER EFFECT --------- */
   #typewriter {
     color: #d63384; /* pinkish highlight */
