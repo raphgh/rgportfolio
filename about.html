@@ -40,16 +40,13 @@
     </nav>
 
     <div class="about-container">
-        <!-- Row 1: About Me Section -->
         <div class="about-row">
-            <!-- Image Column -->
             <div class="about-image-column">
                 <a href="contact.html">
                     <img src="images/about-me-image.png" class="about-me-image" alt="About Me">
                 </a>
             </div>
             
-            <!-- Text Column -->
             <div class="about-text-column">
                 <p>
                     🧠 <a class="link about-me-item" href="#about me">about me</a>
@@ -70,9 +67,7 @@
             </div>
         </div>
 
-        <!-- Row 2: How I Work Section -->
         <div class="about-row">
-            <!-- Text Column -->
             <div class="about-text-column">
                 <div id="work" class="how-i-work">
                     <h2>how do i work?</h2>
@@ -88,7 +83,6 @@
                 </div>
             </div>
 
-            <!-- Image Column -->
             <div class="about-image-column">
                 <a href="contact.html">
                     <img src="images/how-i-work.png" class="about-me-image-2" alt="How I Work">
@@ -129,7 +123,7 @@
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
         
-        // Load saved theme on page load
+        // saved theme on page load
         function loadTheme() {
           const savedTheme = localStorage.getItem('theme');
           if (savedTheme === 'dark') {
@@ -143,14 +137,14 @@
           }
         }
         
-        // Load theme when page loads
+        // theme when page loads
         loadTheme();
       
         toggleBtn.addEventListener('click', () => {
           document.body.classList.toggle('dark-mode');
           document.querySelector('.navbar').classList.toggle('dark-mode');
       
-          // Save the theme state
+          // Save theme state
           if (document.body.classList.contains('dark-mode')) {
             localStorage.setItem('theme', 'dark');
             toggleBtn.innerText = '💡';
