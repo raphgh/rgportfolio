@@ -197,7 +197,7 @@ nav a.active {
 .dev-projects-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
   max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
@@ -206,11 +206,11 @@ nav a.active {
 /* Individual project card */
 .dev-project-card {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 1.5rem;
+  border-radius: 15px;
+  padding: 1rem;
   border: 2px solid rgba(76, 47, 206, 0.2);
   box-shadow: -5px 10px 5px rgba(208, 94, 162, 0.3);
   transition: all 0.3s ease;
@@ -225,8 +225,8 @@ nav a.active {
 /* Project thumbnail */
 .dev-project-thumbnail {
   flex-shrink: 0;
-  width: 200px;
-  height: 150px;
+  width: 160px;
+  height: 120px;
 }
 
 .dev-project-thumbnail img {
@@ -249,12 +249,12 @@ nav a.active {
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.5rem;
 }
 
 .dev-project-title {
   color: #4c2fce;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
   text-shadow: 0 1px 2px rgba(76, 47, 206, 0.3);
@@ -262,8 +262,8 @@ nav a.active {
 
 .dev-project-desc {
   color: #353333;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -271,18 +271,18 @@ nav a.active {
 .dev-project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
 }
 
 .tech-icon {
   display: inline-block;
   background: linear-gradient(135deg, rgba(76, 47, 206, 0.15), rgba(235, 57, 110, 0.15));
   color: #4c2fce;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 15px;
   border: 1px solid rgba(76, 47, 206, 0.3);
   transition: all 0.3s ease;
   cursor: default;
@@ -775,20 +775,20 @@ a:hover .about-me-image-2{
     
     /* Dev projects responsive */
     .dev-projects-container {
-      gap: 2rem;
+      gap: 1.2rem;
       padding: 0 0.5rem;
     }
     
     .dev-project-card {
       flex-direction: column;
-      gap: 1.5rem;
-      padding: 1rem;
+      gap: 1rem;
+      padding: 0.9rem;
     }
     
     .dev-project-thumbnail {
       width: 100%;
-      max-width: 300px;
-      height: 180px;
+      max-width: 280px;
+      height: 150px;
       margin: 0 auto;
     }
     
@@ -853,13 +853,13 @@ a:hover .about-me-image-2{
     
     /* Dev projects tablet */
     .dev-project-card {
-      gap: 1.5rem;
-      padding: 1.2rem;
+      gap: 1.25rem;
+      padding: 1rem;
     }
     
     .dev-project-thumbnail {
-      width: 180px;
-      height: 140px;
+      width: 150px;
+      height: 115px;
     }
   }
   
