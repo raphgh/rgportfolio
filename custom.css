@@ -386,198 +386,116 @@ body.dark-mode .tech-icon:hover {
   } 
   
 /* --------------- ABOUT ME ------------- */
-/* About page container - 2x2 grid layout */
-.about-container {
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 4rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  position: relative;
+/* Modern About page layout */
+.about-container-new {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 2rem;
 }
 
-/* Add subtle background pattern */
-.about-container::before {
-  content: '';
-  position: absolute;
-  top: -2rem;
-  left: -2rem;
-  right: -2rem;
-  bottom: -2rem;
-  z-index: -1;
-  border-radius: 20px;
-}
-
-/* Each row in the about page */
-.about-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-  min-height: 400px;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease forwards;
-  padding-bottom: 3rem;
-}
-
-.about-row:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Image column styling */
-.about-image-column {
+.about-content-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Text column styling */
-.about-text-column {
-  display: flex;
-  padding-top: 5rem;
   flex-direction: column;
-  justify-content: center;
-  line-height: 1.6;
-  font-family: Menlo, Consolas, 'Courier New', monospace;
-  position: relative;
+  gap: 3rem;
 }
 
-/* Add subtle background card effect */
-.about-text-column::before {
-  content: '';
-  position: absolute;
-  top: 2rem;
-  left: -1rem;
-  right: -1rem;
-  bottom: -1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  z-index: -1;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.about-text-section {
+  display: flex;
+  flex-direction: column;
 }
 
-.about-me-item{ /* the links that lead to diff sections on the page */
-  display: inline-block;
-  color: #eb396e;
-  font-size: 1rem;
+.about-title {
+  color: #4c2fce;
+  font-size: 2.5rem;
   font-weight: 700;
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-  margin-right: 0.4rem;
-  text-decoration: none;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(76, 47, 206, 0.2);
+}
+
+.about-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 2;
+  font-size: 1.1rem;
+  color: #353333;
+}
+
+.about-text-content p {
+  margin: 0;
   transition: all 0.3s ease;
-  background: rgba(235, 57, 110, 0.1);
-  border: 1px solid rgba(235, 57, 110, 0.3);
 }
 
-.about-me-item:hover {
-  background: rgba(235, 57, 110, 0.2);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(235, 57, 110, 0.3);
-  color: #d63384;
+.about-text-content p:hover {
+  transform: translateX(3px);
 }
 
-.about-me-image{
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  min-height: 380px;
-  max-height: 480px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: -8px 15px 25px rgba(208, 94, 162, 0.4);
-  transition: all 0.4s ease;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-}
-
-a:hover .about-me-image{
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: -12px 20px 35px rgba(208, 94, 162, 0.6);
-  border-color: rgba(235, 57, 110, 0.5);
-}
-
-.about-me-image-2{
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  min-height: 380px;
-  max-height: 480px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: -8px 15px 25px rgba(208, 94, 162, 0.4);
-  transition: all 0.4s ease;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-}
-
-a:hover .about-me-image-2{
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: -12px 20px 35px rgba(208, 94, 162, 0.6);
-  border-color: rgba(235, 57, 110, 0.5);
-}
-
-.how-i-work{
-  padding: 0;
-  width: 100%;
-}
-
-.how-i-work-text{
-  line-height: 1.8;
-  font-size: 1rem;
+.about-intro {
+  font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 1rem;
-  position: relative;
-  padding-left: 1rem;
-}
-
-.how-i-work-text::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  width: 3px;
-  background: linear-gradient(135deg, #eb396e, #d63384);
-  border-radius: 2px;
-}
-
-/* Enhanced section headings */
-.about-text-column h2 {
   color: #4c2fce;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-shadow: 0 1px 2px rgba(76, 47, 206, 0.3);
-  padding-left: 0.6rem;
 }
 
-.about-text-column h5 {
+.about-text-content strong {
   color: #4c2fce;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-shadow: 0 1px 2px rgba(76, 47, 206, 0.3);
+  font-weight: 600;
 }
 
-/* Enhanced paragraph styling */
-.about-text-column p {
-  position: relative;
-  margin-bottom: 0.8rem;
-  transition: all 0.3s ease;
+.about-signoff {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
 }
 
-.about-text-column p:hover {
-  transform: translateX(5px);
-  color: #2c2c2c;
+.about-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-main-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow: -8px 15px 25px rgba(208, 94, 162, 0.4);
+  transition: all 0.4s ease;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.about-main-image:hover {
+  transform: translateY(-5px);
+  box-shadow: -12px 20px 35px rgba(208, 94, 162, 0.6);
+  border-color: rgba(235, 57, 110, 0.5);
+}
+
+/* Dark mode for about page */
+body.dark-mode .about-title {
+  color: #a8e1fc;
+}
+
+body.dark-mode .about-text-content {
+  color: #e0e0e0;
+}
+
+body.dark-mode .about-intro {
+  color: #a8e1fc;
+}
+
+body.dark-mode .about-text-content strong {
+  color: #a8e1fc;
+}
+
+body.dark-mode .about-signoff {
+  color: #bbb;
+}
+
+body.dark-mode .about-main-image {
+  border-color: rgba(168, 225, 252, 0.3);
 }
 
 .my-education{
@@ -969,77 +887,46 @@ a:hover .about-me-image-2{
   
   /* About Me Page Responsive Design */
   @media (max-width: 768px) {
-    .about-container {
-      gap: 2rem;
-      margin: 1rem auto;
-      padding: 0 0.5rem;
+    .about-container-new {
+      padding: 0 1.5rem;
+      margin: 2rem auto;
     }
     
-    .about-row {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      min-height: auto;
-      animation: none;
-      opacity: 1;
-      transform: none;
+    .about-content-wrapper {
+      gap: 2.5rem;
     }
     
-    .about-image-column {
-      order: 1;
+    .about-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
     }
     
-    .about-text-column {
-      order: 2;
-      padding-top: 2rem;
+    .about-text-content {
+      font-size: 1rem;
+      gap: 1.5rem;
+      line-height: 1.8;
     }
     
-    .about-text-column::before {
-      top: 1rem;
-      left: -0.5rem;
-      right: -0.5rem;
-      bottom: -0.5rem;
-    }
-    
-    .about-me-image,
-    .about-me-image-2 {
-      max-width: 320px;
-      min-height: 300px;
-      max-height: 380px;
-    }
-    
-    .how-i-work-text {
-      font-size: 0.9rem;
-      line-height: 1.6;
-      padding-left: 0.8rem;
-    }
-    
-    .about-me-item {
-      font-size: 0.9rem;
-      padding: 0.3rem 0.6rem;
-    }
-    
-    .about-text-column h2 {
-      font-size: 1.8rem;
-    }
-    
-    .about-text-column h5 {
+    .about-intro {
       font-size: 1.1rem;
+    }
+    
+    .about-main-image {
+      max-height: 300px;
     }
   }
   
   @media (min-width: 769px) and (max-width: 1024px) {
-    .about-container {
+    .about-container-new {
+      padding: 0 1.5rem;
+    }
+    
+    .about-content-wrapper {
       gap: 3rem;
-      margin: 1.5rem auto;
     }
     
-    .about-row {
-      gap: 2rem;
-    }
-    
-    .about-me-image,
-    .about-me-image-2 {
-      max-width: 380px;
+    .about-main-image {
+      max-width: 400px;
     }
   }
 
